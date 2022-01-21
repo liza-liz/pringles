@@ -48,7 +48,6 @@ header .navigation
 {
     position: relative;
     display: flex;
-
 }
 header .navigation li
 {
@@ -62,6 +61,15 @@ header .navigation li a
     text-decoration: none;
     margin-left: 40px;
 }
+header .navigation li a:hover
+{
+    color: #70D770;
+}
+header .navigation li a:active
+{
+    color: #E8AB35;
+}
+
 .content
 {
     position: relative;
