@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Pringles Landing Page</title>
+        <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <section>
+            <div class="circle"></div>
+            <header>
+                <a href="#"><img src="logo.png" class="logo"></a>
+                <div class="toggle" onclick="toggleMenu()"></div>
+                <ul class="navigation">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">What's New</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </header>
+            <div class="content">
+                <div class="textBox">
+                    <h2>Get Stakin'</h2>
+                    <p>We know what you're saying: "how can you have more than one favorite crisp?" Trust us, every crisp is your favorite crisp when they're Pringles®.</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+                <div class="imgBox">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="pringles1.png" /></div>
+                            <div class="swiper-slide"><img src="pringles2.png" /></div>
+                            <div class="swiper-slide"><img src="pringles3.png" /></div>
+                            <div class="swiper-slide"><img src="pringles4.png" /></div>
+                            <div class="swiper-slide"><img src="pringles5.webp" /></div>
+                            <div class="swiper-slide"><img src="pringles6.webp" /></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <ul class="sci">
+                <li><a href="#"><img src="facebook.png"></a></li>
+                <li><a href="#"><img src="twitter.png"></a></li>
+                <li><a href="#"><img src="instagram.png"></a></li>
+            </ul>
+        </section>
+        <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+              effect: "coverflow",
+              grabCursor: true,
+              centeredSlides: true,
+              slidesPerView: "auto",
+              coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 200,
+                modifier: 1,
+                slideShadows: true,
+              },
+              pagination: {
+                el: ".swiper-pagination",
+              },
+              loop: true,
+            });
+
+            function toggleMenu(){
+                const menuToggle = document.querySelector('.toggle');
+                const navigation = document.querySelector('.navigation')
+                menuToggle.classList.toggle('active')
+                navigation.classList.toggle('active')
+            }
+        </script>
+    </body>
+</html>
