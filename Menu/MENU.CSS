@@ -57,6 +57,7 @@ header .navigation li a
     text-decoration: none;
 	margin-left: 40px;
 	margin-top: 10px;
+	font-family: POPPINS;
 }
 
 header .navigation li a:hover {
