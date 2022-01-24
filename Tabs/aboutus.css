@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+section
+{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #000000;
+}
+section .circle
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fcbf49;
+    clip-path: circle(61% at left 82%);
+}
+header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo
+{
+    position: relative;
+    width: 75px;
+    height:100px;
+}
+header .navigation
+{
+    position: relative;
+    display: flex;
+
+}
+header .navigation li
+{
+    list-style: none;
+}
+header .navigation li a
+{
+    display: inline-block;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+.content
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content .textBox
+{
+    position: relative;
+    max-width: 600px;
+    margin-right: 20px;
+    text-align: right;
+}
+.content .textBox h2
+{
+    color: #fdfdfd;
+    font-size: 4em;
+    margin-bottom: 10px;
+    line-height: 1.4em;
+    font-weight: 700;
+    text-align: right;
+}
+.content .textBox p
+{
+    color: rgb(252, 252, 252);
+}
+.content .textBox a
+{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #fcbf49;
+    color:#fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+.content .imgBox
+{
+    width: 750px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 90px;
+    padding: 100px 0;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-basis: 50%;
+}
+.content .imgBox img
+{
+    max-width: 750px;
+}
+@media (max-width: 991px)
+{
+    header
+    {
+        padding: 40px;
+    }
+    section{
+        padding: 100px 40px;
+    }
+    .content {
+        flex-direction: column;}
+
+    .content .textbox,
+    .content .imgBox {
+        max-width: 100%;
+    }
+    .content .imgBox img{
+        max-width: 500px;
+    }
+    section .circle
+{
+    clip-path: circle(56% at left 60%);
+}
+    header .navigation
+    {
+        display: none;
+    }
+    header .navigation.active
+    {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #fcbf49;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+    }
+    header .navigation li 
+    {
+        margin: 10px 0;
+        font-size: 1.5em;
+        font-weight: 300;
+    }
+    .toggle
+    {
+        position: relative;
+        width: 30px;
+        height: 30px;
+        background: url(../Images/menu.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+        z-index: 10000;
+    }
+    .toggle.active
+    {
+        position: fixed;
+        right: 40px;
+        background: url(../Images/close.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+
+
