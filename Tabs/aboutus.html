@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial scale=1.0" charset="UTF-8">
+        <title>About us</title>
+        <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+        <link rel="stylesheet" href="aboutus.css">
+    </head>
+    <body style="background-color: #fcbf49;">
+        <section> 
+            <div class="circle"></div>
+            <header>
+                <a href='#'><img src="../Images/logo.png" width="75" height="100" class="logo"></a>
+                <div class="toggle" onclick="toggleMenu()"></div>
+                <ul class="navigation">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="whatsnew.html">What's New</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                </ul>
+            </header>
+            <div class="content">
+                <div class="imgBox">
+                    <img src="../Images/Pringles-Emblem.png" class="pringles">
+                </div>
+                <div class="textBox">
+                    <h2 allign="left">Everything pops with Pringles</h2>
+                    <p allign="left">
+                        Pringles® are made with real potatoes that we form into a ‘Pringle shaped potato dough’, we fry and season the crisps just right before placing them into our iconic can. The seasoning system we use is a waterfall process (seasoning gets sprinkled on) vs a tumbler like other chip processes
+                    </p>
+                    <a href="https://www.pringles.com/us/faq.html">Read More</a>
+                </div>      
+            </div>
+            <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script>
+            function toggleMenu(){
+                const menuToggle = document.querySelector('.toggle');
+                const navigation = document.querySelector('.navigation')
+                menuToggle.classList.toggle('active')
+                navigation.classList.toggle('active')
+            }
+        </script>
+    </body>
+</html>
+                
+    
+    
