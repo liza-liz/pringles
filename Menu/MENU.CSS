@@ -1,7 +1,7 @@
 /*DOWNLOADED FONT FOR MENU PAGE*/
 @FONT-FACE {
 	FONT-FAMILY: YUMMY FOODIES;
-	SRC: URL("Yummy Foodies.ttf");
+	SRC: URL("YummyFoodies.ttf");
 }
 
 /*DEFAULT SANS-SERIF FONT THROUGHOUT THE WEBSITE*/
@@ -13,7 +13,7 @@
 /*700 SANS-SERIF FONT FOR A TAG*/
 @FONT-FACE {
 	FONT-FAMILY: POPPINSB;
-	SRC: URL("Poppins Bold.ttf");
+	SRC: URL("PoppinsBold.ttf");
 }
 
 
