@@ -1,7 +1,7 @@
 /*DOWNLOADED FONT FOR MENU PAGE*/
 @FONT-FACE {
 	FONT-FAMILY: YUMMY FOODIES;
-	SRC: URL("Yummy Foodies.ttf");
+	SRC: URL("YummyFoodies.ttf");
 }
 
 /*DEFAULT SANS-SERIF FONT THROUGHOUT THE WEBSITE*/
@@ -13,7 +13,7 @@
 /*700 SANS-SERIF FONT FOR A TAG*/
 @FONT-FACE {
 	FONT-FAMILY: POPPINSB;
-	SRC: URL("Poppins Bold.ttf");
+	SRC: URL("PoppinsBold.ttf");
 }
 
 
@@ -29,6 +29,7 @@ header
     display: flex;
     justify-content: space-between;
     align-items: left;
+    margin:auto;
 }
 
 header .logo
@@ -36,13 +37,15 @@ header .logo
     position: relative;
     max-width: 75px;
 	max-height: 100px;
-	padding-left: 100px;
+	left: 150%;
+	margin:auto;
 }
 header .navigation
 {
     position: absolute;
     display: flex;
-	margin-left: 850px;
+	margin: auto;
+	left: 60%;
 
 }
 header .navigation li
@@ -54,10 +57,11 @@ header .navigation li a
     display: inline-block;
     color: #fff;
     font-weight: 500;
-    text-decoration: none;
-	margin-left: 40px;
-	margin-top: 10px;
 	font-family: POPPINS;
+    text-decoration: none;
+	margin: auto;
+	margin-left: 40px;
+	margin-top: 20px;
 }
 
 header .navigation li a:hover {
@@ -66,11 +70,18 @@ header .navigation li a:hover {
 
 /*START OF MENU STYLE SHEET*/
 
+* { 
+	MARGIN: 0PX;
+	PADDING:0PX;
+	BOX-SIZING: BORDER-BOX;
+}
+
 BODY {
 	BACKGROUND-COLOR: #161616;
 	TEXT-ALIGN: CENTER;
-	MARGIN: 10PX;
+	MARGIN: AUTO;
 	PADDING: 10PX;
+	WIDTH: 1430PX;
 }
 
 .TITLE {
@@ -120,7 +131,7 @@ BODY {
 	FONT-FAMILY: YUMMY FOODIES;
 	WIDTH: 33.33%;
 	FLOAT: LEFT;
-	MARGIN-TOP: -50PX;
+	MARGIN-TOP: 0PX;
 }
 
 .CATEGORYLAST {
@@ -130,7 +141,7 @@ BODY {
 	FONT-FAMILY: YUMMY FOODIES;
 	WIDTH: 33.33%;
 	MARGIN: AUTO;
-	MARGIN-TOP: -40PX;
+	MARGIN-TOP: 0PX;
 }
 
 .CATEGORYR {
@@ -142,7 +153,7 @@ BODY {
 	FLOAT: LEFT;
 	MARGIN-TOP: -30PX;
 	TEXT-ALIGN: CENTER;
-	MARGIN-BOTTOM: -30PX;
+	MARGIN-BOTTOM: 0PX;
 }
 
 .CATEGORYL {
@@ -152,7 +163,7 @@ BODY {
 	FONT-FAMILY: YUMMY FOODIES;
 	WIDTH: 25%;
 	FLOAT: RIGHT;
-	MARGIN-TOP: -325PX;
+	MARGIN-TOP: -300PX;
 	MARGIN-RIGHT: 180PX;
 	TEXT-ALIGN: CENTER;
 }
@@ -163,7 +174,7 @@ BODY {
 	FONT-SIZE: 18PX;
 	WIDTH: 32.33%;
 	FLOAT: LEFT;
-	MARGIN-TOP: -60PX;
+	MARGIN-TOP: 0PX;
 	MARGIN-LEFT: 10PX;
 }
 
@@ -205,7 +216,7 @@ BODY {
 	FONT-SIZE: 18PX;
 	WIDTH: 33.33%;
 	MARGIN: AUTO;
-	MARGIN-TOP: -40PX;
+	MARGIN-TOP: 0PX;
 }
 
 A.MENU {
@@ -213,8 +224,8 @@ A.MENU {
 	BACKGROUND-COLOR: #E8AB35;
 	WIDTH: 200PX;
 	PADDING: 10PX;
-	MARGIN-RIGHT: 120PX;
-	MARGIN-LEFT: 120PX;
+	MARGIN-RIGHT: 130PX;
+	MARGIN-LEFT: 130PX;
 	MARGIN-BOTTOM: 100PX;
 	FONT-FAMILY: POPPINSB;
 	FONT-SIZE: 25PX;
@@ -265,7 +276,7 @@ IMG.MENUL {
 	WIDTH: 75PX;
 	HEIGHT: 275PX;
 	MARGIN-RIGHT: 560PX;
-	MARGIN-TOP: -275PX;
+	MARGIN-TOP: -210PX;
 	FLOAT: RIGHT;
 }
 IMG.MENUC {
